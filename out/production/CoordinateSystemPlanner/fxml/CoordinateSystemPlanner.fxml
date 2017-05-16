@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CoordinateSystemPlannerController">
+   <children>
+      <TextField fx:id="latitudeTextField" layoutX="142.0" layoutY="116.0" />
+      <TextField fx:id="longitudeTextField" layoutX="142.0" layoutY="157.0" />
+      <TableView fx:id="coordinateOutputTable" layoutX="38.0" layoutY="220.0" prefHeight="200.0" prefWidth="553.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="220.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="277.3999938964844" text="Latitude (DD)" />
+          <TableColumn editable="false" prefWidth="273.6000061035156" text="Longitude (DD)" />
+        </columns>
+      </TableView>
+      <Label layoutX="80.0" layoutY="119.0" prefHeight="20.0" prefWidth="60.0" text="Latitude: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="160.0" prefHeight="17.0" prefWidth="66.0" text="Longitude:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="76.0" text="Center Point:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="shapeChooser" layoutX="380.0" layoutY="117.0" prefHeight="25.0" prefWidth="128.0" />
+      <Label layoutX="392.0" layoutY="76.0" text="Desired Shape:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="121.0" text="DD" />
+      <Label layoutX="297.0" layoutY="161.0" text="DD" />
+      <TextField fx:id="numPointsTextField" layoutX="448.0" layoutY="157.0" prefHeight="25.0" prefWidth="92.0" />
+      <Label layoutX="347.0" layoutY="161.0" text="Number of Points:" />
+   </children>
+</AnchorPane>
